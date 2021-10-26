@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Kenyon Huppe | Webdeveloper</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <section class="header-wrap">
+                <div id="profile">
+                    <a href="./index.html">
+                        <img src="./Images/temp.jpg" alt="headshot picture">
+                    </a>
+                </div>
+                <section class="header-primary">
+                    <div id="logo">
+                        <a href="./index.html">
+                            <h1 id="header-name">Kenyon <span>Huppe</span></h1>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#project-heading" id="projects-link">Projects</a></li>
+                            <li><a href="#tech-title" id="tech-link">Technologies</a></li>
+                            <li><a href="#about-title" id="contact-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+
+            <!-- 
+                logo
+                navbar (projects, about, contact)
+             -->
+        </header>
+        <main>
+            <div class="main-wrap">
+                <div id="banner"></div>
+                <section class="intro">
+                    <h2 id="statement"><span id="strong-weight">Hi, I'm <span id="color-change">Kenyon Huppe.</span>
+                        </span>I use technology to solve problems.</h2>
+                    <h3 id="position-title">Front End Web Developer</h3>
+                    <!-- todo resume download -->
+                </section>
+                <section class="projects">
+                    <div class="project-wrap">
+                        <h2 id="project-heading">Projects</h2>
+                        <article class="project-article project-article-1">
+                            <a href="#">
+                                <img src="./Images/Study With Japan(medium).PNG" alt="project-1" class="project-img">
+                            </a>
+                            <div class="project-brief">
+                                <h2 class="project-title">Study With Japan</h2>
+                                <p class="project-info">A dummy brochure site showcasing web development apptitude. The
+                                    Study With Japan site presents an option for students looking to study culture in
+                                    Japan.</p>
+                                <a href="#">
+                                    <div class="btn">Details</div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-article project-article-2">
+                            <a href="#">
+                                <img src="./Images/WeatherDirect.(medium)PNG.PNG" alt="project-2" class="project-img">
+                            </a>
+                            <div class="project-brief">
+                                <h2 class="project-title">WeatherDirect</h2>
+                                <p class="project-info">A simple weather site that allows the user to view the weather
+                                    for
+                                    any given city. Simply submitting a city name displays the given data.</p>
+                                <a href="#">
+                                    <div class="btn">Details</div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-article project-article-3">
+                            <a href="#">
+                                <img src="#" alt="project-3" class="project-img">
+                            </a>
+                            <div class="project-brief">
+                                <h2 class="project-title"></h2>
+                                <p class="project-info"></p>
+                                <a href="#">
+                                    <!-- todo add details page for each project -->
+                                    <div class="btn">Details</div>
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+                <section class="tech">
+                    <div class="tech-wrap">
+                        <h2 id="tech-title">Technologies Used</h2>
+                        <ul>
+                            <!-- todo on hove displays name -->
+                            <li><i class="fab fa-brands fa-html5"></i>
+                            </li>
+                            <li><i class="fab fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fab fa-brands fa-js-square"></i></li>
+                            <li><i class="fab fa-brands fa-git-alt"></i></li>
+                            <li><i class="fab fa-brands fa-java"></i></li>
+                        </ul>
+
+
+
+
+                    </div>
+                </section>
+                <section class="info">
+                    <article class="about">
+                        <h2 id="about-title">About</h2>
+                        <!-- name, where from, passions, 'I look forward to working with you! -->
+                        <p id="about-me">My name is Kenyon Huppe. I am currently based in Olympia Washington it which I
+                            have lived for the majority of my life. In my spare time, I like to work on personal
+                            programming projects as well as biking or drawing. I look forward to working with you!</p>
+
+                    </article>
+                    <div id="spacing"></div>
+                    <article class="contact">
+                        <h2 id="contact-title">Contact Me</h2>
+                        <p id="contact-brief">Please leave your information down below & I will get back to you in 1-2
+                            days.</p>
+                        <form action="" id="contact-form">
+                            <div class="name-email-wrap">
+                                <div class="contact-wrap contact-name">
+                                    <label for="name" class="contact-label">Name<span
+                                            class="required-input">*</span></label>
+                                    <input name="name" type="text" class="text-place" id="name">
+                                </div>
+                                <div class="contact-wrap contact-email">
+                                    <label for="email" class="contact-label">Email<span
+                                            class="required-input">*</span></label>
+                                    <input name="email" type="email" class="text-place" id="email">
+                                </div>
+                            </div>
+                            <div class="contact-wrap contact-subject">
+                                <label for="subject" class="contact-label">Subject<span
+                                        class="required-input">*</span></label>
+                                <input name="subject" type="text" class="text-place" id="subject">
+                            </div>
+                            <div class="contact-wrap contact-message">
+                                <label for="message" class="contact-label">Message<span
+                                        class="required-input">*</span></label>
+                                <textarea name="message" class="text-place" id="message"></textarea>
+                            </div>
+                            <div class="btn" id="send-message">Send Message</div>
+                        </form>
+                    </article>
+                </section>
+            </div>
+            <!-- 
+
+               -'Hi, I'm Kenyon [strong]. I use the technology to solve problems.'
+               'Front End Web Developer'
+               resume download
+               -projects (alternating - text & images - left-right)
+               -about (name, where from, passions, 'I look forward to working with you!')
+               -contact (opens up a small window overtop screen) 
+             -->
+        </main>
+        <footer>
+            <section class="footer-wrap">
+                <ul>
+                    <!-- todo look into font awesome icons -->
+                    <!-- todo add target blank to open to new tab -->
+                    <li><a href="https://github.com/Kenyon-Huppe" id="github" target="_blank"><i
+                                class="fab fa-brands social fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kenyon-huppe-18178021b/" id="linkedin" target="_blank"><i
+                                class="fab fa-brands social fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/kenyonhuppe/" id="insta" target="_blank"><i
+                                class="fab fa-brands social fa-instagram"></i></a></li>
+                </ul>
+            </section>
+            <!-- 
+                contact links: GitHub, linked-in, indeed, Insta, 
+             -->
+        </footer>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e80b72746a.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    TODO
+
+    todo nav hover underline slide
+    todo project pages
+    todo email form 
+    todo responsive
+ -->
