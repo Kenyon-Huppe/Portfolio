@@ -13,6 +13,20 @@
     font-family: 'Roboto', sans-serif;
     
 }
+
+/* ! keep eye on regarding footer & media queries */
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
 p{
     line-height: 2em;
 }
@@ -40,7 +54,7 @@ footer{
     text-transform: uppercase;
 }
 #profile{
-    position: absolute;
+    position: relative;
     width: 110px;
     height: 110px;
     overflow: hidden;
@@ -94,12 +108,88 @@ nav ul li a{
     font-weight: bold;
     color: #000;
     margin: 0 3em 0px 3em;
+    width: 50px;
+
+    
+    
 }
+nav ul li a::before{
+    
+    
+}
+nav ul li a:hover::before{
+    
+}
+/* ! edit below */
 nav ul li a:hover{
-    text-decoration: underline;
+    background-size: 100%;
+    /* text-decoration: underline; */
+}
+.nav-links{
+
+}
+.nav-links:hover{
+
 }
 #projects-link{
     margin-left: 0;
+    position: relative;
+}
+#projects-link::before{
+    content: '';
+    /* width: 100%; */
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 2px solid var(--baseColor);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transitionTime);
+}
+#projects-link:hover::before{
+    /* only goes to 30 as thats the length of the link name */
+    transform: scaleX(30);
+}
+
+#tech-link{
+    position: relative;
+}
+#tech-link::before{
+    content: '';
+    /* width: 100%; */
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 2px solid var(--baseColor);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transitionTime);
+}
+#tech-link:hover::before{
+    /* only goes to 44 as thats the length of the link name */
+    transform: scaleX(44);
+}
+
+#contact-link{
+    position: relative;
+}
+#contact-link::before{
+    content: '';
+    /* width: 100%; */
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 2px solid var(--baseColor);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transitionTime);
+}
+#contact-link:hover::before{
+    /* only goes to 27 as thats the length of the link name */
+    transform: scaleX(27);
 }
 
 /* * main section */
@@ -149,7 +239,7 @@ nav ul li a:hover{
     text-align: center;
     font-size: 2.7em;
     /* text-decoration: underline; */
-    margin: 3em 0px 1.2em;
+    padding: 3em 0px 1.2em;
     text-shadow: var(--textShadow);
 }
 .project-article{
@@ -211,7 +301,7 @@ nav ul li a:hover{
     align-items: center;
     background-color: var(--baseColor);
     border-radius: 40px;
-    width: 4.3em;
+    width: 4.9em;
     height: 1.9em;
     color: #fff;
     /* outline: 2px solid var(--baseColor); */
@@ -227,13 +317,13 @@ nav ul li a:hover{
 
 /* * TECHNOLOGY */
 .tech{
-
+    /* ! */
 }
 .tech-wrap{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin-top: 7em;
+    padding: 12em 0 5em;
 }
 #tech-title{
     text-align: center;
@@ -413,7 +503,7 @@ footer{
     flex-flow: row wrap;
     justify-content: center;
     /* position: absolute; */
-    margin: 5em 0em 2em 0em;
+    margin: 5em 0em 3em 0em;
 }
 .footer-wrap ul li{
     
@@ -441,6 +531,36 @@ footer{
 }
 .fa-instagram:hover{
     color: var(--baseColor);
+}
+
+#to-top{
+    position: absolute;
+    float: right;
+    margin: 0em 2em 1em;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+}
+#to-top:hover{
+    font-size: 2em;
+}
+.fa-arrow-up{
+    text-align: center;
+    padding: 13px;
+    border-radius: 50px;
+    /* margin: 25px 0 0 33px; */
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    z-index: 100;
+    font-size: 1em;
+    transition: var(--transitionTime);
+}
+.fa-arrow-up:hover{
+    color: var(--baseColor);
+    padding: 10px;
+    font-size: 1.2em;
 }
 
 

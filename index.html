@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <title>Kenyon Huppe | Webdeveloper</title>
+    <title>Kenyon Huppe | Web Developer</title>
 </head>
 
 <body>
     <div class="wrap">
         <header>
-            <section class="header-wrap">
+            <section class="header-wrap" id="top">
                 <div id="profile">
                     <a href="./index.html">
                         <img src="./Images/temp.jpg" alt="headshot picture">
@@ -27,9 +27,9 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#project-heading" id="projects-link">Projects</a></li>
-                            <li><a href="#tech-title" id="tech-link">Technologies</a></li>
-                            <li><a href="#about-title" id="contact-link">Contact</a></li>
+                            <li><a href="#project-heading" class="nav-links" id="projects-link">Projects</a></li>
+                            <li><a href="#tech-top" class="nav-links" id="tech-link">Technologies</a></li>
+                            <li><a href="#about-title" class="nav-links" id="contact-link">Contact</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -53,6 +53,7 @@
                     <div class="project-wrap">
                         <h2 id="project-heading">Projects</h2>
                         <article class="project-article project-article-1">
+                            <!-- todo put in live links -->
                             <a href="#">
                                 <img src="./Images/Study With Japan(medium).PNG" alt="project-1" class="project-img">
                             </a>
@@ -61,8 +62,8 @@
                                 <p class="project-info">A dummy brochure site showcasing web development apptitude. The
                                     Study With Japan site presents an option for students looking to study culture in
                                     Japan.</p>
-                                <a href="#">
-                                    <div class="btn">Details</div>
+                                <a href="./project1.html">
+                                    <div class="btn">Visit Site</div>
                                 </a>
                             </div>
                         </article>
@@ -76,7 +77,7 @@
                                     for
                                     any given city. Simply submitting a city name displays the given data.</p>
                                 <a href="#">
-                                    <div class="btn">Details</div>
+                                    <div class="btn">Visit Site</div>
                                 </a>
                             </div>
                         </article>
@@ -89,14 +90,14 @@
                                 <p class="project-info"></p>
                                 <a href="#">
                                     <!-- todo add details page for each project -->
-                                    <div class="btn">Details</div>
+                                    <div class="btn">Visit Site</div>
                                 </a>
                             </div>
                         </article>
 
                     </div>
                 </section>
-                <section class="tech">
+                <section class="tech" id="tech-top">
                     <div class="tech-wrap">
                         <h2 id="tech-title">Technologies Used</h2>
                         <ul>
@@ -178,6 +179,8 @@
                     <li><a href="https://www.instagram.com/kenyonhuppe/" id="insta" target="_blank"><i
                                 class="fab fa-brands social fa-instagram"></i></a></li>
                 </ul>
+                <div class="btn" id="to-top"><a href="#top"><i class="fa fa-solid fa-arrow-up" id="up-arrow"></i></a>
+                </div>
             </section>
             <!-- 
                 contact links: GitHub, linked-in, indeed, Insta, 
@@ -194,7 +197,6 @@
 <!-- 
     TODO
 
-    todo nav hover underline slide
     todo project pages
     todo email form 
     todo responsive
