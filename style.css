@@ -5,6 +5,7 @@
     --boxShadow : 2px 2px 24px 4px rgba(0,0,0,0.3);
     --transitionTime: 0.3s;
     --subtleGrey: rgb(224, 224, 224);
+    --backgroundColor: #353535;
 }
 *{
     box-sizing: border-box;
@@ -24,27 +25,19 @@ body{
     height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
-}
-
-
-p{
-    line-height: 2em;
-}
-.wrap{
     display: flex;
     flex-flow: column nowrap;
+    background-color: var(--backgroundColor);
+    color: #fff;
+}
+p{
+    line-height: 2em;
 }
 header{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-}
-main{
-
-}
-footer{
-
 }
 
 /* * header section */
@@ -66,15 +59,11 @@ footer{
     margin-top: -13px;
     /* height: 60px; */
 }
-/* ! #profile:hover{
-    outline: 2px solid var(--baseColor);
-} */
 
 .header-primary{
     text-align: center;
     /* ! margin-right: 7em; */
 }
-/* todo slide transition */
 #logo{
     display: flex;
     background-color: var(--baseColor);
@@ -92,9 +81,6 @@ footer{
     text-decoration: none;
     color: #fff;
 }
-#logo span{
-    /* margin-left: 40px; */
-}
 nav{
    margin: 0px 0px 0px 3em; 
 }
@@ -109,27 +95,12 @@ nav ul li a{
     color: #000;
     margin: 0 3em 0px 3em;
     width: 50px;
+}
 
-    
-    
-}
-nav ul li a::before{
-    
-    
-}
-nav ul li a:hover::before{
-    
-}
 /* ! edit below */
-nav ul li a:hover{
+nav ul li a:hover, nav ul li a:focus{
     background-size: 100%;
     /* text-decoration: underline; */
-}
-.nav-links{
-
-}
-.nav-links:hover{
-
 }
 #projects-link{
     margin-left: 0;
@@ -147,7 +118,7 @@ nav ul li a:hover{
     transform-origin: left;
     transition: var(--transitionTime);
 }
-#projects-link:hover::before{
+#projects-link:hover::before, #projects-link:focus::before{
     /* only goes to 30 as thats the length of the link name */
     transform: scaleX(30);
 }
@@ -167,7 +138,7 @@ nav ul li a:hover{
     transform-origin: left;
     transition: var(--transitionTime);
 }
-#tech-link:hover::before{
+#tech-link:hover::before, #tech-link:focus::before{
     /* only goes to 44 as thats the length of the link name */
     transform: scaleX(44);
 }
@@ -187,21 +158,20 @@ nav ul li a:hover{
     transform-origin: left;
     transition: var(--transitionTime);
 }
-#contact-link:hover::before{
+#contact-link:hover::before, #contact-link:focus::before{
     /* only goes to 27 as thats the length of the link name */
     transform: scaleX(27);
 }
 
 /* * main section */
-.main-wrap{
-    
-}
 .intro{
     /* color: #fff; */
     margin: 5em 0px 2em;
     text-align: center;
 }
-/* #banner{
+/* 
+    !
+    #banner{
     position: absolute;
     background: url(./Images/banner.jpg);
     background-size: cover;
@@ -209,6 +179,7 @@ nav ul li a:hover{
     width: 100vw;
     height: 90vh;
     z-index: -100;
+    !
 } */
 #statement{
     /* padding-top: 1em; */
@@ -249,9 +220,8 @@ nav ul li a:hover{
     height: 33em;
 }
 .project-article-1{
-    /* margin: 4em 0px 5em; */
-    /* background color below alternates */
-    background-color: var(--subtleGrey)
+    background-color: var(--subtleGrey);
+    color: var(--backgroundColor);
 }
 .project-article-2{
     
@@ -272,7 +242,7 @@ nav ul li a:hover{
 
     transition: var(--transitionTime);
 }
-.project-img:hover{
+.project-img:hover, .project-img:focus{
     width: 32em;
 }
 /* todo anim shiny effect accross img */
@@ -295,7 +265,7 @@ nav ul li a:hover{
 }
 
 .btn{
-    font-size: 2em;
+    font-size: 1.7em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,17 +278,14 @@ nav ul li a:hover{
     
     transition: var(--transitionTime);
 }
-.btn:hover{
+.btn:hover, .btn:focus{
     background-color: #fff;
     color: var(--baseColor);
     outline: 1px solid var(--baseColor);
-    font-size: 2.2em;
+    font-size: 1.9em;
 }
 
 /* * TECHNOLOGY */
-.tech{
-    /* ! */
-}
 .tech-wrap{
     display: flex;
     flex-flow: column nowrap;
@@ -351,31 +318,31 @@ nav ul li a:hover{
 .fa-html5{
     transition: var(--transitionTime);
 }
-.fa-html5:hover{
+.fa-html5:hover, .fa-html5:focus{
     color: #FF0000;
 }
 .fa-css3-alt{
     transition: var(--transitionTime);
 }
-.fa-css3-alt:hover{
+.fa-css3-alt:hover, .fa-css3-alt:focus{
     color: #0098FF;
 }
 .fa-js-square{
     transition: var(--transitionTime);
 }
-.fa-js-square:hover{
+.fa-js-square:hover, .fa-js-square:focus{
     color: #f0db4f;
 }
 .fa-git-alt{
     transition: var(--transitionTime);
 }
-.fa-git-alt:hover{
+.fa-git-alt:hover, .fa-git-alt:focus{
     color: #f34f29;
 }
 .fa-java{
     transition: var(--transitionTime);
 }
-.fa-java:hover{
+.fa-java:hover, .fa-java:focus{
     color: #f89820;
 }
 
@@ -384,10 +351,10 @@ nav ul li a:hover{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background: linear-gradient( rgba(255, 255, 255, 0.568), 
+    background: linear-gradient( var(--backgroundColor), 
     rgba(0, 155, 134, 0.411));
-    height: 30em;
-    padding-top: 2em;
+    height: 35em;
+    padding: 2em 0 10em;
 }
 .about{
     /* text-align: left; */
@@ -409,21 +376,16 @@ nav ul li a:hover{
 }
 
 .contact{
-    
     width: 30em;
-    /* margin: 0px 8em 0px 0em; */
-    /* padding-left: 7em; */
 }
 #contact-title{
     font-size: 2em;
     text-shadow: var(--textShadow);
+    text-align: center;
 }
 #contact-brief{
     font-size: 1.4em;
     margin-bottom: 1em;
-}
-#contact-form{
-
 }
 .contact-wrap{
     display: flex;
@@ -440,9 +402,6 @@ nav ul li a:hover{
     flex-flow: row nowrap;
     
 }
-.contact-name{
-
-}
 #name{
     width: 9.5em;
     padding-left: .6em;
@@ -453,15 +412,6 @@ nav ul li a:hover{
 #email{
     width: 9.5em;
 }
-.contact-subject{
-
-}
-#subject{
-
-}
-.contact-message{
-
-}
 #message{
     padding-top: .4em;
     min-height: 2em;
@@ -470,6 +420,7 @@ nav ul li a:hover{
 .contact-label{
     text-transform: uppercase;
     font-size: 1.2em;
+    margin: 0.6em 0 0.2em;
 }
 .required-input{
     color: #c50928;
@@ -481,7 +432,6 @@ nav ul li a:hover{
     padding: 8px;
     width: 8em;
     font-size: 1.5em;
-    
     margin-top: 1em;
     transition: var(--transitionTime);
 }
@@ -506,9 +456,8 @@ footer{
     margin: 5em 0em 3em 0em;
 }
 .footer-wrap ul li{
-    
     list-style: none;
-    margin-right: 3.5em;
+    margin-right: 2em;
 }
 .social{
     font-size: 3em;
@@ -536,13 +485,13 @@ footer{
 #to-top{
     position: absolute;
     float: right;
-    margin: 0em 2em 1em;
+    margin: 0em 2em 1.2em;
     bottom: 0;
     right: 0;
     width: 60px;
     height: 60px;
 }
-#to-top:hover{
+#to-top:hover, #to-top:focus{
     font-size: 2em;
 }
 .fa-arrow-up{
@@ -557,7 +506,7 @@ footer{
     font-size: 1em;
     transition: var(--transitionTime);
 }
-.fa-arrow-up:hover{
+.fa-arrow-up:hover, .fa-arrow-up:focus{
     color: var(--baseColor);
     padding: 10px;
     font-size: 1.2em;
@@ -570,3 +519,297 @@ footer{
         min-height: 150px;
         resize: vertical;
 */
+
+@media(max-width: 1188px){
+
+    /* * HEADER */
+    .header-wrap{
+        flex-flow: column nowrap;
+    }
+    #profile{
+        margin: 2.3em 0px 0px 3em;
+    }
+    #profile img{
+        width: 110px;
+    }
+    nav ul li a{
+        margin: 0 1.6em 0px 1.6em;
+    }
+
+    /* PROJECTS */
+    .project-wrap{
+        margin: 2em 0px 2em;
+    }
+    .project-article{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 60em;
+    }
+    .project-img{
+        margin: 0px 0em 0px 0em;
+    }
+    .project-brief{
+        width: 30em;
+        margin-left: 0em;
+    }
+    .project-title{
+        margin-top: 1.5em;
+        font-size: 2.7em;
+        text-shadow: var(--textShadow);
+    }
+    .project-info{
+        font-size: 1.4em;
+        margin: 1em 0px 1.5em;
+    }
+
+    .project-article-3{
+        /* ! below */
+        display: none;
+
+        background-color: var(--subtleGrey)
+    }
+
+
+    /* * TECH */
+    .tech-wrap{
+        padding: 9em 0 5em;
+    }
+    .tech-wrap ul{
+        width: 700px;
+    }
+    .tech-wrap ul li{
+        margin: 1em 7em;
+    }
+
+    /* * CONTACT */
+    .info{
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 20em 0 25em;
+        
+    }
+    .contact{
+        padding: 3em 0;
+    }
+    #contact-title{
+        font-size: 2em;
+        text-shadow: var(--textShadow);
+        text-align: center;
+    }
+
+    /* * FOOTER */
+    .footer-wrap{
+        /* float: right; */
+        
+        margin: 2em 0 1em 3em;
+    }
+    .footer-wrap ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        /* position: absolute; */
+        /* margin: 5em 0em 3em 0em; */
+    }
+}
+
+@media(max-width: 700px){
+
+    /* HEADER */
+    #profile{
+        margin: 2.3em auto 0px;
+    }
+    #logo{
+        margin: 1.6em auto 1.6em;
+    }
+    nav{
+        margin: 0px auto; 
+     }
+     nav ul{
+         margin: 0 auto;
+         text-align: center;
+     }
+     nav ul li{
+         list-style: none;
+         display: block;
+         text-align: center;
+         margin: 1em 0;
+     }
+     #projects-link{
+        margin: 0 auto;
+     }
+     #tech-link{
+        margin: 0 auto;
+     }
+     #contact-link{
+        margin: 0 auto;
+     }
+
+    /* TECH */
+    .tech-wrap ul{
+        width: 450px;
+    }
+    .tech-wrap ul li{
+        margin: 1em 4.5em;
+    }
+}
+
+@media (max-width: 555px){
+
+    /* HEADER */
+    .intro{
+        /* color: #fff; */
+        margin: 3em 0px 2em;
+        text-align: center;
+    }
+    #statement{
+        /* padding-top: 1em; */
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        
+        margin-bottom: 1em;
+        font-size: 1.7em;
+    }
+    #strong-weight{
+        font-size: 2em;
+    }
+    /* 
+        todo format contact
+        todo bump up up-btn
+    */
+
+    /* PROJECTS */
+    .project-article{
+        height: 57em;
+    }
+    .project-img{
+        margin: 0px 0em 0px 0em;
+        /* width below is standard width for this size */
+        width: 21em;
+    }
+    .project-brief{
+        /* width below is standard width for this size */
+        width: 21em;
+    }
+    .project-article-3{
+        /* ! below */
+        display: none;
+
+        background-color: var(--subtleGrey)
+    }
+
+    /* TECH */
+    .tech-wrap{
+        padding: 4em 0 5em;
+    }
+    .tech-wrap ul{
+        width: 400px;
+    }
+    .tech-wrap ul li{
+        margin: 1em 4em;
+    }
+
+
+    /* CONTACT */
+    .info{
+        padding: 27em 0 33em;
+    }
+    .about{
+        width: 21em;
+    }
+    .contact{
+        width: 21em;
+        padding: 5em 0;
+    }
+    
+    .text-place{
+        width: 14em;
+    }
+    .name-email-wrap{
+        flex-flow: column nowrap;
+    }
+    #name{
+        width: 14em;
+        padding-left: 0;
+    }
+    .contact-email{
+        margin-left: 0em;
+    }
+    #email{
+        width: 14em;
+    }
+
+    /* * FOOTER */
+    .footer-wrap{
+        margin: 2em 0 1em 3em;
+    }
+    .footer-wrap ul{
+        justify-content: flex-start;
+    }
+    #to-top{
+        margin: 0em 2em 1.4em;
+        width: 45px;
+        height: 45px;
+    }
+    .fa-arrow-up{
+        padding: 7px;
+        width: 45px;
+        height: 45px;
+    }
+    .fa-arrow-up:hover, .fa-arrow-up:focus{
+        padding: 4px;
+    }
+}
+
+@media(max-width: 400px){
+    /* PROJECTS */
+    .project-img{
+        width: 19em;
+    }
+    .project-brief{
+        width: 19em;
+    }
+
+    /* TECH */
+    .tech-wrap ul{
+        width: 300px;
+    }
+    .tech-wrap ul li{
+        margin: 1em 2em;
+    }
+
+    /* CONTACT */
+    .about{
+        width: 19em;
+    }
+    .contact{
+        width: 19em;
+    }
+    .text-place{
+        width: 12.7em;
+    }
+    #name{
+        width: 12.7em;
+    }
+    #email{
+        width: 12.7em;
+    }
+
+    /* FOOTER */
+    .social{
+        font-size: 2.5em;
+    }
+
+    #to-top{
+        margin: 0em 0.9em 1.4em;
+        width: 45px;
+        height: 45px;
+    }
+    .fa-arrow-up{
+        padding: 7px;
+        width: 45px;
+        height: 45px;
+    }
+}
