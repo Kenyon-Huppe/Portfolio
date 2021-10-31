@@ -34,11 +34,6 @@
                     </nav>
                 </section>
             </section>
-
-            <!-- 
-                logo
-                navbar (projects, about, contact)
-             -->
         </header>
         <main>
             <div class="main-wrap">
@@ -47,7 +42,7 @@
                     <h2 id="statement"><span id="strong-weight">Hi, I'm <span id="color-change">Kenyon Huppe.</span>
                         </span>I use technology to solve problems.</h2>
                     <h3 id="position-title">Front End Web Developer</h3>
-                    <!-- todo resume download -->
+                    <a href="./Kenyon_Huppe_Resume.pdf" id="resume-download" download>Resume PDF Download</a>
                 </section>
                 <section class="projects">
                     <!-- todo add link to specific GitHub repo code -->
@@ -63,7 +58,8 @@
                                 <p class="project-info">A dummy brochure site showcasing web development apptitude. The
                                     Study With Japan site offers opportunity to study Japanese culture.</p>
                                 <a href="./project1.html">
-                                    <div class="btn">Visit Site</div>
+                                    <button class="btn">Visit Site
+                                    </button>
                                 </a>
                             </div>
                         </article>
@@ -77,7 +73,8 @@
                                     for
                                     any given city. Simply submitting a city name displays the given data.</p>
                                 <a href="#">
-                                    <div class="btn">Visit Site</div>
+                                    <button class="btn">Visit Site
+                                    </button>
                                 </a>
                             </div>
                         </article>
@@ -90,7 +87,8 @@
                                 <p class="project-info"></p>
                                 <a href="#">
                                     <!-- todo add details page for each project -->
-                                    <div class="btn">Visit Site</div>
+                                    <button class="btn">Visit Site
+                                    </button>
                                 </a>
                             </div>
                         </article>
@@ -129,43 +127,36 @@
                         <h2 id="contact-title">Contact Me</h2>
                         <p id="contact-brief">Please leave your information down below & I will get back to you in 1-2
                             days.</p>
-                        <form action="" id="contact-form">
+                        <form action="https://formsubmit.co/2b281571dde7d11a5aa8a253618bde67" method="POST"
+                            id="contact-form">
                             <div class="name-email-wrap">
                                 <div class="contact-wrap contact-name">
                                     <label for="name" class="contact-label">Name<span
                                             class="required-input">*</span></label>
-                                    <input name="name" type="text" class="text-place" id="name">
+                                    <input name="name" type="text" class="text-place" id="name" required>
                                 </div>
                                 <div class="contact-wrap contact-email">
                                     <label for="email" class="contact-label">Email<span
                                             class="required-input">*</span></label>
-                                    <input name="email" type="email" class="text-place" id="email">
+                                    <input name="email" type="email" class="text-place" id="email" required>
                                 </div>
                             </div>
+                            <!-- <input type="hidden" name="_next" value=""> -->
                             <div class="contact-wrap contact-subject">
                                 <label for="subject" class="contact-label">Subject<span
                                         class="required-input">*</span></label>
-                                <input name="subject" type="text" class="text-place" id="subject">
+                                <input name="_subject" type="text" class="text-place" id="subject" required>
                             </div>
                             <div class="contact-wrap contact-message">
                                 <label for="message" class="contact-label">Message<span
                                         class="required-input">*</span></label>
-                                <textarea name="message" class="text-place" id="message"></textarea>
+                                <textarea name="message" class="text-place" id="message" required></textarea>
                             </div>
-                            <div class="btn" id="send-message">Send Message</div>
+                            <button class="btn" id="send-message">Send Message</button>
                         </form>
                     </article>
                 </section>
             </div>
-            <!-- 
-
-               -'Hi, I'm Kenyon [strong]. I use the technology to solve problems.'
-               'Front End Web Developer'
-               resume download
-               -projects (alternating - text & images - left-right)
-               -about (name, where from, passions, 'I look forward to working with you!')
-               -contact (opens up a small window overtop screen) 
-             -->
         </main>
         <footer>
             <section class="footer-wrap">
@@ -179,12 +170,9 @@
                     <li><a href="https://www.instagram.com/kenyonhuppe/" id="insta" target="_blank"><i
                                 class="fab fa-brands social fa-instagram"></i></a></li>
                 </ul>
-                <div class="btn" id="to-top"><a href="#top"><i class="fa fa-solid fa-arrow-up" id="up-arrow"></i></a>
-                </div>
+                <button class="btn" id="to-top"><a href="#top"><i class="fa fa-solid fa-arrow-up" id="up-arrow"></i></a>
+                </button>
             </section>
-            <!-- 
-                contact links: GitHub, linked-in, indeed, Insta, 
-             -->
         </footer>
     </div>
 
@@ -193,11 +181,3 @@
 </body>
 
 </html>
-
-<!-- 
-    TODO
-
-    todo project pages
-    todo email form 
-    todo responsive
- -->

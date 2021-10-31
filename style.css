@@ -15,7 +15,6 @@
     
 }
 
-/* ! keep eye on regarding footer & media queries */
 body{
     height: 100vh;
     overflow: hidden;
@@ -62,7 +61,6 @@ header{
 
 .header-primary{
     text-align: center;
-    /* ! margin-right: 7em; */
 }
 #logo{
     display: flex;
@@ -97,10 +95,9 @@ nav ul li a{
     width: 50px;
 }
 
-/* ! edit below */
+
 nav ul li a:hover, nav ul li a:focus{
     background-size: 100%;
-    /* text-decoration: underline; */
 }
 #projects-link{
     margin-left: 0;
@@ -165,24 +162,10 @@ nav ul li a:hover, nav ul li a:focus{
 
 /* * main section */
 .intro{
-    /* color: #fff; */
     margin: 5em 0px 2em;
     text-align: center;
 }
-/* 
-    !
-    #banner{
-    position: absolute;
-    background: url(./Images/banner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 90vh;
-    z-index: -100;
-    !
-} */
 #statement{
-    /* padding-top: 1em; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -199,7 +182,10 @@ nav ul li a:hover, nav ul li a:focus{
 #position-title{
     font-size: 1.5em;
     color: var(--baseColor);
-    /* text-decoration: underline; */
+    margin-bottom: 1em;
+}
+#resume-download{
+    color: #fff
 }
 
 /* PROJECTS */
@@ -209,7 +195,6 @@ nav ul li a:hover, nav ul li a:focus{
 #project-heading{
     text-align: center;
     font-size: 2.7em;
-    /* text-decoration: underline; */
     padding: 3em 0px 1.2em;
     text-shadow: var(--textShadow);
 }
@@ -223,9 +208,6 @@ nav ul li a:hover, nav ul li a:focus{
     background-color: var(--subtleGrey);
     color: var(--backgroundColor);
 }
-.project-article-2{
-    
-}
 .project-article-3{
     /* ! below */
     display: none;
@@ -235,17 +217,13 @@ nav ul li a:hover, nav ul li a:focus{
 .project-img{
     width: 30em;
     margin: 0px 10em 0px 0em;
-    /* todo margin */
-
     border-radius: 10px;
     box-shadow: var(--boxShadow);
-
     transition: var(--transitionTime);
 }
 .project-img:hover, .project-img:focus{
     width: 32em;
 }
-/* todo anim shiny effect accross img */
 .project-brief{
     /* same size as img */
     width: 30em;
@@ -255,7 +233,6 @@ nav ul li a:hover, nav ul li a:focus{
     text-decoration: none;
 }
 .project-title{
-    /* margin-top: 1em; */
     font-size: 2.7em;
     text-shadow: var(--textShadow);
 }
@@ -274,9 +251,9 @@ nav ul li a:hover, nav ul li a:focus{
     width: 4.9em;
     height: 1.9em;
     color: #fff;
-    /* outline: 2px solid var(--baseColor); */
-    
     transition: var(--transitionTime);
+    border: none;
+    cursor: pointer;
 }
 .btn:hover, .btn:focus{
     background-color: #fff;
@@ -309,10 +286,8 @@ nav ul li a:hover, nav ul li a:focus{
     margin: 1em 7em;
 }
 .fa-brands{
-    /* ctrs all icons */
     font-size: 6em;
     color: #000; 
-    /* cursor: pointer; */
 }
 
 .fa-html5{
@@ -357,10 +332,7 @@ nav ul li a:hover, nav ul li a:focus{
     padding: 2em 0 10em;
 }
 .about{
-    /* text-align: left; */
     width: 30em;
-    
-    /* padding-right: 7em; */
 }
 #about-title{
     text-align: center;
@@ -424,6 +396,7 @@ nav ul li a:hover, nav ul li a:focus{
 }
 .required-input{
     color: #c50928;
+    margin-left: 0.1em;
 }
 #send-message{
     cursor: pointer;
@@ -442,11 +415,6 @@ nav ul li a:hover, nav ul li a:focus{
 /* * footer section */
 footer{
     background-color: rgba(0, 155, 134, 0.411);
-}
-.footer-wrap{
-    /* float: right; */
-    
-    /* margin: 2em auto 1em; */
 }
 .footer-wrap ul{
     display: flex;
@@ -491,35 +459,24 @@ footer{
     width: 60px;
     height: 60px;
 }
-#to-top:hover, #to-top:focus{
-    font-size: 2em;
-}
 .fa-arrow-up{
-    text-align: center;
-    padding: 13px;
-    border-radius: 50px;
-    /* margin: 25px 0 0 33px; */
+    /* text-align: center; */
+    padding: 13px 0;
+    /* border-radius: 50px; */
     width: 60px;
     height: 60px;
     color: #fff;
-    z-index: 100;
+    /* z-index: 100; */
     font-size: 1em;
-    transition: var(--transitionTime);
+    /* transition: 0.1s; */
+    text-align: center;
 }
 .fa-arrow-up:hover, .fa-arrow-up:focus{
     color: var(--baseColor);
-    padding: 10px;
     font-size: 1.2em;
 }
 
-
-/* 
-    textarea:
-        line-height: 150%;
-        min-height: 150px;
-        resize: vertical;
-*/
-
+/* * Media Quiries */
 @media(max-width: 1188px){
 
     /* * HEADER */
