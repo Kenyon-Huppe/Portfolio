@@ -53,10 +53,12 @@ header{
     border-radius: 70px;
     margin: 2.3em 0px 0px -7em;
 }
+/* updated headshot goes here */
 #profile img{
-    width: 110px;
+    width: 180px;
     margin-top: -13px;
     /* height: 60px; */
+    margin: -35px -34px;
 }
 
 .header-primary{
@@ -487,7 +489,8 @@ footer{
         margin: 2.3em 0px 0px 3em;
     }
     #profile img{
-        width: 110px;
+        width: 180px;
+        /* margin: -35px -34px; */
     }
     nav ul li a{
         margin: 0 1.6em 0px 1.6em;
