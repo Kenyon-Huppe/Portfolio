@@ -211,10 +211,11 @@ nav ul li a:hover, nav ul li a:focus{
     color: var(--backgroundColor);
 }
 .project-article-3{
-    /* ! below */
-    display: none;
-
-    background-color: var(--subtleGrey)
+    background-color: var(--subtleGrey);
+    color: var(--backgroundColor);
+}
+#project-title-3{
+    font-size: 2em;
 }
 .project-img{
     width: 30em;
@@ -309,6 +310,12 @@ nav ul li a:hover, nav ul li a:focus{
 }
 .fa-js-square:hover, .fa-js-square:focus{
     color: #f0db4f;
+}
+.fa-react{
+    transition: var(--transitionTime);
+}
+.fa-react:hover, .fa-react:focus{
+    color: #61DBFB;
 }
 .fa-git-alt{
     transition: var(--transitionTime);
@@ -525,8 +532,6 @@ footer{
     }
 
     .project-article-3{
-        /* ! below */
-        display: none;
 
         background-color: var(--subtleGrey)
     }
@@ -654,8 +659,6 @@ footer{
         width: 21em;
     }
     .project-article-3{
-        /* ! below */
-        display: none;
 
         background-color: var(--subtleGrey)
     }
