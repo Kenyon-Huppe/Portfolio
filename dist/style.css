@@ -430,7 +430,7 @@ footer{
     flex-flow: row wrap;
     justify-content: center;
     /* position: absolute; */
-    margin: 5em 0em 3em 0em;
+    margin: 5em 0em 5em 0em;
 }
 .footer-wrap ul li{
     list-style: none;
