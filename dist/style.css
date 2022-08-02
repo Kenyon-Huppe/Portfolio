@@ -62,10 +62,17 @@ header {
 
 /* updated headshot goes here */
 .profile-pic {
+<<<<<<< HEAD
     width: 200px;
     margin-bottom: 15px;
     /* height: 100px; */
     margin: 0px -45px;
+=======
+    width: 110px;
+    /* margin-top: -13px; */
+    /* height: 100px; */
+    margin: 0px 0px;
+>>>>>>> 6bc9406e9ef12b15fea54ca4c4fda35bd156da55
 }
 
 .header-primary {
