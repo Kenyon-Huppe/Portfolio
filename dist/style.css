@@ -392,6 +392,16 @@ nav ul li a:focus {
     color: #f89820;
 }
 
+.fa-python:hover,
+.fa-python:focus {
+    color: #ffd43d;
+}
+
+.fa-sass:hover,
+.fa-sass:focus {
+    color: #c69;
+}
+
 /* * INFO (contact) */
 .info {
     display: flex;
