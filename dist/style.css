@@ -196,7 +196,7 @@ nav ul li a:focus {
     justify-content: center;
 
     margin-bottom: 1em;
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 
 #strong-weight {
@@ -210,11 +210,12 @@ nav ul li a:focus {
 #position-title {
     font-size: 1.5em;
     color: var(--baseColor);
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 #resume-download {
-    color: #fff
+    color: #fff;
+    font-size: 1.4em;
 }
 
 /* PROJECTS */
@@ -233,7 +234,7 @@ nav ul li a:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 33em;
+    height: 43em;
 }
 
 .project-article-1 {
@@ -279,7 +280,7 @@ nav ul li a:focus {
 }
 
 .project-info {
-    font-size: 1.4em;
+    font-size: 1em;
     margin: 1em 0px 2em;
 }
 
@@ -331,6 +332,16 @@ nav ul li a:focus {
 .tech-wrap ul li {
     list-style: none;
     margin: 1em 7em;
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-name {
+    margin: 0 auto;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+    user-select: none;
 }
 
 .fa-brands {
@@ -342,8 +353,8 @@ nav ul li a:focus {
     transition: var(--transitionTime);
 }
 
-.fa-html5:hover,
-.fa-html5:focus {
+#html-wrap:hover .html-color,
+#html-wrap:focus .html-color {
     color: #FF0000;
 }
 
@@ -351,17 +362,18 @@ nav ul li a:focus {
     transition: var(--transitionTime);
 }
 
-.fa-css3-alt:hover,
-.fa-css3-alt:focus {
+#css-wrap:hover .css-color,
+#css-wrap:focus .css-color {
     color: #0098FF;
 }
+
 
 .fa-js-square {
     transition: var(--transitionTime);
 }
 
-.fa-js-square:hover,
-.fa-js-square:focus {
+#js-wrap:hover .js-color,
+#js-wrap:focus .js-color {
     color: #f0db4f;
 }
 
@@ -369,8 +381,8 @@ nav ul li a:focus {
     transition: var(--transitionTime);
 }
 
-.fa-react:hover,
-.fa-react:focus {
+#react-wrap:hover .react-color,
+#react-wrap:focus .react-color {
     color: #61DBFB;
 }
 
@@ -378,8 +390,8 @@ nav ul li a:focus {
     transition: var(--transitionTime);
 }
 
-.fa-git-alt:hover,
-.fa-git-alt:focus {
+#git-wrap:hover .git-color,
+#git-wrap:focus .git-color {
     color: #f34f29;
 }
 
@@ -387,18 +399,26 @@ nav ul li a:focus {
     transition: var(--transitionTime);
 }
 
-.fa-java:hover,
-.fa-java:focus {
+#java-wrap:hover .java-color,
+#java-wrap:focus .java-color {
     color: #f89820;
 }
 
-.fa-python:hover,
-.fa-python:focus {
+.fa-python {
+    transition: var(--transitionTime);
+}
+
+#python-wrap:hover .python-color,
+#python-wrap:focus .python-color {
     color: #ffd43d;
 }
 
-.fa-sass:hover,
-.fa-sass:focus {
+.fa-sass {
+    transition: var(--transitionTime);
+}
+
+#sass-wrap:hover .sass-color,
+#sass-wrap:focus .sass-color {
     color: #c69;
 }
 
@@ -420,11 +440,12 @@ nav ul li a:focus {
 #about-title {
     text-align: center;
     font-size: 2em;
+    padding-bottom: 0.3em;
     text-shadow: var(--textShadow);
 }
 
 #about-me {
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 #spacing {
@@ -616,7 +637,7 @@ footer {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        height: 60em;
+        height: 75em;
     }
 
     .project-img {
@@ -635,7 +656,7 @@ footer {
     }
 
     .project-info {
-        font-size: 1.4em;
+        font-size: 1em;
         margin: 1em 0px 1.5em;
     }
 
@@ -771,7 +792,12 @@ footer {
 
     /* PROJECTS */
     .project-article {
-        height: 57em;
+        height: 82em;
+    }
+
+    .project-img:hover,
+    .project-img:focus {
+        width: 25em;
     }
 
     .project-img {
