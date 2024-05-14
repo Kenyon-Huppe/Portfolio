@@ -63,8 +63,8 @@ header {
 /* updated headshot goes here */
 .profile-pic {
     width: 120px;
-    margin-top: -0.3em;
-    margin-left: -0.3em;
+    margin-top: -1.4em;
+    margin-left: -0.6em;
 }
 
 .header-primary {
@@ -237,12 +237,7 @@ nav ul li a:focus {
     height: 43em;
 }
 
-.project-article-1 {
-    background-color: var(--subtleGrey);
-    color: var(--backgroundColor);
-}
-
-.project-article-3 {
+.subtle-grey-background {
     background-color: var(--subtleGrey);
     color: var(--backgroundColor);
 }
@@ -660,12 +655,6 @@ footer {
         margin: 1em 0px 1.5em;
     }
 
-    .project-article-3 {
-
-        background-color: var(--subtleGrey)
-    }
-
-
     /* * TECH */
     .tech-wrap {
         padding: 9em 0 5em;
@@ -809,11 +798,6 @@ footer {
     .project-brief {
         /* width below is standard width for this size */
         width: 21em;
-    }
-
-    .project-article-3 {
-
-        background-color: var(--subtleGrey)
     }
 
     /* TECH */
